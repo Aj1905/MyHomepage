@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <!-- SEO -->
+    <meta name="description" content="個人ホームページです。自己紹介やポートフォリオを掲載しています。">
+    <meta name="keywords" content="個人ホームページ,ポートフォリオ">
+    <meta name="author" content="Your Name">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="個人ホームページ">
+    <meta property="og:description" content="個人ホームページです。">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://your-domain.com">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <title>個人ホームページ</title>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav container">
+            <div class="nav-brand">
+                <a href="/">Your Name</a>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button class="nav-toggle" id="navToggle" aria-label="メニューを開く">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container">
+                <h1 class="hero-title">こんにちは、Your Nameです</h1>
+                <p class="hero-subtitle">個人ホームページへようこそ</p>
+                <a href="#about" class="btn btn-primary">詳しく見る</a>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="section">
+            <div class="container">
+                <h2 class="section-title">About</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>自己紹介文をここに記載します。</p>
+                        <p>スキルや経験について説明します。</p>
+                    </div>
+                    <div class="about-skills">
+                        <h3>Skills</h3>
+                        <ul class="skills-list">
+                            <li>HTML/CSS</li>
+                            <li>JavaScript</li>
+                            <li>その他のスキル</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolio Section -->
+        <section id="portfolio" class="section section-alt">
+            <div class="container">
+                <h2 class="section-title">Portfolio</h2>
+                <div class="portfolio-grid">
+                    <!-- ポートフォリオアイテムの例 -->
+                    <article class="portfolio-item">
+                        <h3>プロジェクト名</h3>
+                        <p>プロジェクトの説明</p>
+                        <a href="#" class="btn btn-secondary">詳細を見る</a>
+                    </article>
+                    <article class="portfolio-item">
+                        <h3>プロジェクト名</h3>
+                        <p>プロジェクトの説明</p>
+                        <a href="#" class="btn btn-secondary">詳細を見る</a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section">
+            <div class="container">
+                <h2 class="section-title">Contact</h2>
+                <div class="contact-content">
+                    <p>お問い合わせは以下の方法でお願いします。</p>
+                    <ul class="contact-links">
+                        <li><a href="mailto:jun.akita.1905@akane.waseda.jp">Email</a></li>
+                        <li><a href="https://github.com/Aj1905" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+                        <li><a href="https://twitter.com/yourusername" target="_blank" rel="noopener noreferrer">Twitter</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Your Name. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
+
