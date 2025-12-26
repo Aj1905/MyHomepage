@@ -1,0 +1,81 @@
+/* ========================================
+   Contact Section Styles
+   ======================================== */
+
+#contact {
+    padding: var(--spacing-lg) 0;
+    background-color: var(--color-bg);
+}
+
+#contact .container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 var(--spacing-md);
+}
+
+#contact .section-title {
+    text-align: center;
+    margin-bottom: var(--spacing-md);
+    color: var(--color-text);
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+#contact .contact-content {
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: var(--spacing-md) 0;
+}
+
+#contact .contact-content p {
+    font-size: 1.125rem;
+    color: var(--color-text-light);
+    line-height: 1.8;
+    margin-bottom: var(--spacing-md);
+}
+
+/* ========================================
+   Mobile Responsive Styles
+   ======================================== */
+
+@media (max-width: 768px) {
+    #contact {
+        padding: var(--spacing-md) 0;
+    }
+    
+    #contact .container {
+        padding: 0 var(--spacing-sm);
+    }
+    
+    #contact .section-title {
+        font-size: 1.75rem;
+        margin-bottom: var(--spacing-sm);
+    }
+    
+    #contact .contact-content {
+        padding: var(--spacing-sm) 0;
+        max-width: 100%;
+    }
+    
+    #contact .contact-content p {
+        font-size: 1rem;
+        padding: 0 var(--spacing-xs);
+    }
+}
+
+@media (max-width: 480px) {
+    #contact {
+        padding: var(--spacing-sm) 0;
+    }
+    
+    #contact .section-title {
+        font-size: 1.5rem;
+    }
+    
+    #contact .contact-content p {
+        font-size: 0.9375rem;
+    }
+}
+
