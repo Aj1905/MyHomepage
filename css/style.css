@@ -105,18 +105,8 @@ a:hover {
 }
 
 /* ========================================
-   Header & Navigation
+   Navigation
    ======================================== */
-.header {
-    position: sticky;
-    top: 0;
-    background-color: var(--color-bg);
-    border-bottom: 1px solid var(--color-border);
-    z-index: 1000;
-    backdrop-filter: blur(10px);
-    background-color: rgba(255, 255, 255, 0.9);
-}
-
 .nav {
     display: flex;
     justify-content: space-between;
