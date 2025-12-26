@@ -337,18 +337,6 @@ a:hover {
 }
 
 /* ========================================
-   Footer
-   ======================================== */
-.footer {
-    padding: var(--spacing-md) 0;
-    border-top: 1px solid var(--color-border);
-    background-color: var(--color-bg-alt);
-    text-align: center;
-    color: var(--color-text-light);
-    font-size: 0.875rem;
-}
-
-/* ========================================
    Mobile Navigation
    ======================================== */
 @media (max-width: 768px) {
