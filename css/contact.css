@@ -43,14 +43,14 @@
     font-size: 1.125rem;
     color: var(--color-text-light);
     line-height: 1.8;
-    margin-bottom: var(--spacing-md);
+    margin-bottom: var(--spacing-sm);
 }
 
 #contact .contact-links {
     display: flex;
     justify-content: center;
     gap: var(--spacing-md);
-    margin-top: var(--spacing-lg);
+    margin-top: var(--spacing-sm);
     flex-wrap: wrap;
 }
 
@@ -125,7 +125,7 @@
     
     #contact .contact-links {
         gap: var(--spacing-sm);
-        margin-top: var(--spacing-md);
+        margin-top: var(--spacing-sm);
     }
     
     #contact .contact-link {
