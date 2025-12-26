@@ -78,6 +78,13 @@ p {
     margin-bottom: var(--spacing-sm);
 }
 
+.heading__main {
+    font-size: 2rem;
+    font-weight: 400;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 0.05em;
+}
+
 a {
     color: var(--color-primary);
     text-decoration: none;
@@ -222,8 +229,18 @@ a:hover {
 /* ========================================
    Sections
    ======================================== */
+.section {
+    padding: var(--spacing-lg) 0;
+}
+
 .section-alt {
     background-color: var(--color-bg-alt);
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: var(--spacing-lg);
+    color: var(--color-text);
 }
 
 /* ========================================
@@ -327,6 +344,18 @@ a:hover {
 }
 
 /* ========================================
+   Footer
+   ======================================== */
+.footer {
+    padding: var(--spacing-md) 0;
+    border-top: 1px solid var(--color-border);
+    background-color: var(--color-bg-alt);
+    text-align: center;
+    color: var(--color-text-light);
+    font-size: 0.875rem;
+}
+
+/* ========================================
    Mobile Navigation
    ======================================== */
 @media (max-width: 768px) {
@@ -363,13 +392,6 @@ a:hover {
     .nav-toggle.active span:nth-child(3) {
         transform: rotate(-45deg) translate(7px, -6px);
     }
-}
-
-/* ========================================
-   Section Product Cards
-   ======================================== */
-.section-product__cards__item {
-    background-color: var(--color-bg-alt);
 }
 
 /* ========================================
