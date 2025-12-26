@@ -78,13 +78,6 @@ p {
     margin-bottom: var(--spacing-sm);
 }
 
-.heading__main {
-    font-size: 2rem;
-    font-weight: 400;
-    font-family: 'Montserrat', sans-serif;
-    letter-spacing: 0.05em;
-}
-
 a {
     color: var(--color-primary);
     text-decoration: none;
