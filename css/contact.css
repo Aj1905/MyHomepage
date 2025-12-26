@@ -120,11 +120,6 @@
     border-color: transparent;
 }
 
-#contact .contact-link-icon {
-    font-size: 1.25rem;
-    transition: transform 0.2s ease;
-}
-
 #contact .contact-link:hover .contact-link-icon {
     transform: scale(1.1);
 }
