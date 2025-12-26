@@ -366,6 +366,13 @@ a:hover {
 }
 
 /* ========================================
+   Section Product Cards
+   ======================================== */
+.section-product__cards__item {
+    background-color: var(--color-bg-alt);
+}
+
+/* ========================================
    Utility Classes
    ======================================== */
 @media (prefers-reduced-motion: reduce) {
