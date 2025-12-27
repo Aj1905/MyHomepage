@@ -99,7 +99,7 @@ a:hover {
 /* ========================================
    Container
    ======================================== */
-.container {
+.page__container {
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
@@ -107,44 +107,44 @@ a:hover {
 }
 
 @media (max-width: 768px) {
-    .container {
+    .page__container {
         padding: 0 var(--spacing-sm);
     }
 }
 
 /* ========================================
-   Navigation
+   Navigation (deprecated - use header component)
    ======================================== */
-.nav {
+.header__nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: var(--spacing-sm) var(--spacing-md);
 }
 
-.nav-brand a {
+.header__nav-brand a {
     font-size: 1.25rem;
     font-weight: 700;
     color: var(--color-text);
 }
 
-.nav-menu {
+.header__nav-menu {
     display: flex;
     list-style: none;
     gap: var(--spacing-md);
 }
 
-.nav-menu a {
+.header__nav-menu a {
     color: var(--color-text);
     font-weight: 500;
     padding: var(--spacing-xs) 0;
 }
 
-.nav-menu a:hover {
+.header__nav-menu a:hover {
     color: var(--color-primary);
 }
 
-.nav-toggle {
+.header__nav-toggle {
     display: none;
     flex-direction: column;
     gap: 4px;
@@ -154,7 +154,7 @@ a:hover {
     padding: var(--spacing-xs);
 }
 
-.nav-toggle span {
+.header__nav-toggle span {
     width: 24px;
     height: 2px;
     background-color: var(--color-text);
@@ -162,32 +162,32 @@ a:hover {
 }
 
 /* ========================================
-   Hero Section
+   Hero Section (deprecated - use mv component)
    ======================================== */
-.hero {
+.mv {
     padding: var(--spacing-xl) 0;
     text-align: center;
     background: linear-gradient(135deg, var(--color-bg-alt) 0%, var(--color-bg) 100%);
 }
 
-.hero-title {
+.mv__title {
     font-size: 3rem;
     margin-bottom: var(--spacing-sm);
     color: var(--color-text);
 }
 
-.hero-subtitle {
+.mv__subtitle {
     font-size: 1.25rem;
     color: var(--color-text-light);
     margin-bottom: var(--spacing-md);
 }
 
 @media (max-width: 768px) {
-    .hero-title {
+    .mv__title {
         font-size: 2rem;
     }
     
-    .hero-subtitle {
+    .mv__subtitle {
         font-size: 1rem;
     }
 }
@@ -195,7 +195,7 @@ a:hover {
 /* ========================================
    Buttons
    ======================================== */
-.btn {
+.button {
     display: inline-block;
     padding: var(--spacing-xs) var(--spacing-md);
     border-radius: var(--radius-md);
@@ -206,23 +206,23 @@ a:hover {
     border: none;
 }
 
-.btn-primary {
+.button--primary {
     background-color: var(--color-primary);
     color: white;
 }
 
-.btn-primary:hover {
+.button--primary:hover {
     background-color: var(--color-primary-dark);
     color: white;
 }
 
-.btn-secondary {
+.button--secondary {
     background-color: transparent;
     color: var(--color-primary);
     border: 2px solid var(--color-primary);
 }
 
-.btn-secondary:hover {
+.button--secondary:hover {
     background-color: var(--color-primary);
     color: white;
 }
@@ -234,11 +234,11 @@ a:hover {
     padding: var(--spacing-lg) 0;
 }
 
-.section-alt {
+.section--alt {
     background-color: var(--color-bg-alt);
 }
 
-.section-title {
+.section__title {
     text-align: center;
     margin-bottom: var(--spacing-lg);
     color: var(--color-text);
@@ -247,30 +247,30 @@ a:hover {
 /* ========================================
    About Section
    ======================================== */
-.about-content {
+.about__content {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: var(--spacing-lg);
     align-items: start;
 }
 
-.about-text {
+.about__text {
     font-size: 1.125rem;
     color: var(--color-text-light);
 }
 
-.about-skills h3 {
+.about__skills h3 {
     margin-bottom: var(--spacing-sm);
 }
 
-.skills-list {
+.skills__list {
     list-style: none;
     display: flex;
     flex-wrap: wrap;
     gap: var(--spacing-xs);
 }
 
-.skills-list li {
+.skills__list-item {
     padding: var(--spacing-xs) var(--spacing-sm);
     background-color: var(--color-bg-alt);
     border-radius: var(--radius-md);
@@ -278,7 +278,7 @@ a:hover {
 }
 
 @media (max-width: 768px) {
-    .about-content {
+    .about__content {
         grid-template-columns: 1fr;
     }
 }
@@ -286,13 +286,13 @@ a:hover {
 /* ========================================
    Portfolio Section
    ======================================== */
-.portfolio-grid {
+.portfolio__grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: var(--spacing-md);
 }
 
-.portfolio-item {
+.portfolio__item {
     padding: var(--spacing-md);
     background-color: var(--color-bg);
     border-radius: var(--radius-lg);
@@ -300,30 +300,30 @@ a:hover {
     transition: var(--transition);
 }
 
-.portfolio-item:hover {
+.portfolio__item:hover {
     transform: translateY(-4px);
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
 }
 
-.portfolio-item h3 {
+.portfolio__item h3 {
     margin-bottom: var(--spacing-xs);
 }
 
-.portfolio-item p {
+.portfolio__item p {
     color: var(--color-text-light);
     margin-bottom: var(--spacing-sm);
 }
 
 /* ========================================
-   Contact Section
+   Contact Section (deprecated - use contact-section component)
    ======================================== */
-.contact-content {
+.contact-section__content {
     text-align: center;
     max-width: 600px;
     margin: 0 auto;
 }
 
-.contact-links {
+.contact-section__links {
     list-style: none;
     display: flex;
     justify-content: center;
@@ -332,14 +332,14 @@ a:hover {
     flex-wrap: wrap;
 }
 
-.contact-links a {
+.contact-section__links a {
     padding: var(--spacing-xs) var(--spacing-md);
     border: 2px solid var(--color-primary);
     border-radius: var(--radius-md);
     font-weight: 500;
 }
 
-.contact-links a:hover {
+.contact-section__links a:hover {
     background-color: var(--color-primary);
     color: white;
 }
@@ -360,11 +360,11 @@ a:hover {
    Mobile Navigation
    ======================================== */
 @media (max-width: 768px) {
-    .nav-toggle {
+    .header__nav-toggle {
         display: flex;
     }
     
-    .nav-menu {
+    .header__nav-menu {
         position: fixed;
         top: 60px;
         left: -100%;
@@ -378,19 +378,19 @@ a:hover {
         border-bottom: 1px solid var(--color-border);
     }
     
-    .nav-menu.active {
+    .header__nav-menu--active {
         left: 0;
     }
     
-    .nav-toggle.active span:nth-child(1) {
+    .header__nav-toggle--active span:nth-child(1) {
         transform: rotate(45deg) translate(5px, 5px);
     }
     
-    .nav-toggle.active span:nth-child(2) {
+    .header__nav-toggle--active span:nth-child(2) {
         opacity: 0;
     }
     
-    .nav-toggle.active span:nth-child(3) {
+    .header__nav-toggle--active span:nth-child(3) {
         transform: rotate(-45deg) translate(7px, -6px);
     }
 }
@@ -466,14 +466,14 @@ a:hover {
   Layout
   ======================================== */
  
- .wrap {
+ .page {
   width: 100%;
   min-width: 1120px;
   background-color: #fff
  }
  
  @media screen and (max-width: 767px) {
-  .wrap {
+  .page {
   min-width: 0;
   overflow: hidden
   }
@@ -484,7 +484,7 @@ a:hover {
   Header
   ======================================== */
  
- .header, .wrap.is-fixed {
+ .header, .page--fixed {
   position: fixed
  }
  
@@ -1247,7 +1247,7 @@ a:hover {
   Canvas / Animation
   ======================================== */
  
- .canvas__wrapper {
+ .mv__canvas-wrapper {
   position: absolute;
   left: 0;
   top: 0;
@@ -1257,13 +1257,13 @@ a:hover {
  }
  
  @media screen and (max-width: 767px) {
-  .canvas__wrapper {
+  .mv__canvas-wrapper {
   height: 455px
   }
  
  }
  
- .canvas {
+ .mv__canvas {
   position: absolute;
   left: 0;
   top: 0;

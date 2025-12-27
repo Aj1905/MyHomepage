@@ -35,7 +35,14 @@
     background-color: var(--color-bg);
 }
 
-#contact .container {
+.contact-section__container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 var(--spacing-md);
+}
+
+#contact .contact-section__container {
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
@@ -46,14 +53,21 @@
     margin-bottom: var(--spacing-md);
 }
 
-#contact .contact-content {
+.contact-section__content {
     text-align: left;
     max-width: 600px;
     margin: 0 auto;
     padding: var(--spacing-md) 0;
 }
 
-#contact .contact-content p {
+#contact .contact-section__content {
+    text-align: left;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: var(--spacing-md) 0;
+}
+
+.contact-section__content p {
     font-size: 1.0625rem;
     color: var(--color-text);
     line-height: 1.9;
@@ -61,7 +75,15 @@
     font-weight: 300;
 }
 
-#contact .contact-links {
+#contact .contact-section__content p {
+    font-size: 1.0625rem;
+    color: var(--color-text);
+    line-height: 1.9;
+    margin-bottom: var(--spacing-md);
+    font-weight: 300;
+}
+
+.contact-section__links {
     display: flex;
     justify-content: flex-start;
     gap: var(--spacing-sm);
@@ -69,7 +91,15 @@
     flex-wrap: wrap;
 }
 
-#contact .contact-link {
+#contact .contact-section__links {
+    display: flex;
+    justify-content: flex-start;
+    gap: var(--spacing-sm);
+    margin-top: var(--spacing-md);
+    flex-wrap: wrap;
+}
+
+.contact-section__link {
     display: inline-flex;
     align-items: center;
     gap: 0.625rem;
@@ -87,7 +117,25 @@
     overflow: hidden;
 }
 
-#contact .contact-link::before {
+#contact .contact-section__link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.625rem;
+    padding: 0.625rem 1.75rem;
+    border: 1.5px solid var(--color-border);
+    border-radius: 2rem;
+    background-color: var(--color-bg);
+    color: var(--color-text);
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 0.9375rem;
+    transition: all 0.2s ease;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.contact-section__link::before {
     content: '';
     position: absolute;
     top: 0;
@@ -98,33 +146,75 @@
     transition: left 0.5s;
 }
 
-#contact .contact-link:hover::before {
+#contact .contact-section__link::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+    transition: left 0.5s;
+}
+
+.contact-section__link:hover::before {
     left: 100%;
 }
 
-#contact .contact-link:hover {
+#contact .contact-section__link:hover::before {
+    left: 100%;
+}
+
+.contact-section__link:hover {
     transform: translateY(-2px);
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
     border-color: var(--color-primary);
 }
 
-#contact .contact-link--instagram:hover {
+#contact .contact-section__link:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+    border-color: var(--color-primary);
+}
+
+.contact-section__link--instagram:hover {
     background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
     color: white;
     border-color: transparent;
 }
 
-#contact .contact-link--github:hover {
+#contact .contact-section__link--instagram:hover {
+    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    color: white;
+    border-color: transparent;
+}
+
+.contact-section__link--github:hover {
     background-color: #24292e;
     color: white;
     border-color: transparent;
 }
 
-#contact .contact-link:hover .contact-link-icon {
+#contact .contact-section__link--github:hover {
+    background-color: #24292e;
+    color: white;
+    border-color: transparent;
+}
+
+.contact-section__link:hover .contact-section__link-icon {
     transform: scale(1.1);
 }
 
-#contact .contact-link-text {
+#contact .contact-section__link:hover .contact-section__link-icon {
+    transform: scale(1.1);
+}
+
+.contact-section__link-text {
+    font-size: 0.9375rem;
+    letter-spacing: 0.02em;
+}
+
+#contact .contact-section__link-text {
     font-size: 0.9375rem;
     letter-spacing: 0.02em;
 }
@@ -138,8 +228,18 @@
         padding: var(--spacing-md) 0;
     }
     
-    #contact .container {
+    .contact-section__container {
         padding: 0 var(--spacing-sm);
+    }
+    
+    #contact .contact-section__container {
+        padding: 0 var(--spacing-sm);
+    }
+    
+    .contact-section-title {
+        font-size: 1.75rem;
+        margin-bottom: var(--spacing-sm);
+        gap: 0.75rem;
     }
     
     #contact .contact-section-title {
@@ -152,24 +252,46 @@
         width: 100px;
     }
     
-    #contact .contact-content {
+    .contact-section__content {
         padding: var(--spacing-sm) 0;
         max-width: 100%;
         text-align: left;
     }
     
-    #contact .contact-content p {
+    #contact .contact-section__content {
+        padding: var(--spacing-sm) 0;
+        max-width: 100%;
+        text-align: left;
+    }
+    
+    .contact-section__content p {
         font-size: 1rem;
         padding: 0;
     }
     
-    #contact .contact-links {
+    #contact .contact-section__content p {
+        font-size: 1rem;
+        padding: 0;
+    }
+    
+    .contact-section__links {
         gap: var(--spacing-sm);
         margin-top: var(--spacing-md);
         justify-content: flex-start;
     }
     
-    #contact .contact-link {
+    #contact .contact-section__links {
+        gap: var(--spacing-sm);
+        margin-top: var(--spacing-md);
+        justify-content: flex-start;
+    }
+    
+    .contact-section__link {
+        padding: 0.4rem 1.2rem;
+        font-size: 0.875rem;
+    }
+    
+    #contact .contact-section__link {
         padding: 0.4rem 1.2rem;
         font-size: 0.875rem;
     }
@@ -178,6 +300,11 @@
 @media (max-width: 480px) {
     #contact {
         padding: var(--spacing-sm) 0;
+    }
+    
+    .contact-section-title {
+        font-size: 1.5rem;
+        gap: 0.5rem;
     }
     
     #contact .contact-section-title {
@@ -189,16 +316,29 @@
         width: 80px;
     }
     
-    #contact .contact-content p {
+    .contact-section__content p {
         font-size: 0.9375rem;
     }
     
-    #contact .contact-link {
+    #contact .contact-section__content p {
+        font-size: 0.9375rem;
+    }
+    
+    .contact-section__link {
         padding: 0.35rem 1rem;
         font-size: 0.8125rem;
     }
     
-    #contact .contact-link-icon {
+    #contact .contact-section__link {
+        padding: 0.35rem 1rem;
+        font-size: 0.8125rem;
+    }
+    
+    .contact-section__link-icon {
+        font-size: 0.9375rem;
+    }
+    
+    #contact .contact-section__link-icon {
         font-size: 0.9375rem;
     }
 }
