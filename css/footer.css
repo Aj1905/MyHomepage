@@ -4,7 +4,7 @@
 .footer {
     padding: var(--spacing-md) 0;
     border-top: 1px solid var(--color-border);
-    background-color: var(--color-bg-alt);
+    background-color: #0e192d;
     text-align: center;
     color: var(--color-text-light);
     font-size: 0.875rem;
