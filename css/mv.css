@@ -296,52 +296,11 @@
  display: block
 }
 
-.mv-detail__link {
- text-decoration: none;
- -webkit-transition: opacity .25s ease;
- transition: opacity .25s ease
-}
-
-.mv-detail__link .mv-detail__title {
+.mv-detail__title {
  color: #000
 }
 
-.mv-detail__link:hover .mv-detail__main-title, .mv-detail__link:hover .mv-detail__title {
+.mv-detail__main-title, .mv-detail__link:hover .mv-detail__title {
  opacity: .7
-}
-
-.mv-detail__title {
- margin: 0;
- font-size: 42px;
- font-family: YakuHanJP, EB Garamond, serif;
- font-weight: 600;
- text-align: center;
- line-height: 1.6;
- letter-spacing: .11em
-}
-
-@media screen and (max-width: 767px) {
- .mv-detail__title {
- font-size: 28px
- }
-
-}
-
-.mv-detail__main-title {
- margin: 5px 0 0;
- font-size: 16px;
- font-weight: 700;
- text-align: center;
- color: #99001c;
- line-height: 1.6;
- letter-spacing: .2em
-}
-
-@media screen and (max-width: 767px) {
- .mv-detail__main-title {
- margin: 1px 0 0;
- font-size: 12px
- }
-
 }
 
