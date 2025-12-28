@@ -131,7 +131,7 @@
 
 }
 
-.header__logo__image {
+.header__logo-image {
   display: block;
   width: 123px;
   height: auto;
@@ -140,7 +140,7 @@
 }
 
 @media screen and (max-width: 767px) {
-  .header__logo__image {
+  .header__logo-image {
   width: 83px;
   max-height: 50px
   }
@@ -277,19 +277,19 @@
 
 }
 
-.header__buttons__item__icon {
+.header__buttons-icon {
   display: inline-block;
   margin: 0 10px 0 0
 }
 
-.header__buttons__item__icon--user svg {
+.header__buttons-icon--user svg {
   width: 16px;
   height: 20px;
   fill: #fff
 }
 
 @media screen and (max-width: 767px) {
-  .header__buttons__item__icon--user svg {
+  .header__buttons-icon--user svg {
   width: 12px;
   height: 16px
   }
