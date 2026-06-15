@@ -15,7 +15,6 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/footer.css">
-    <link rel="stylesheet" href="css/contact.css">
     <link rel="stylesheet" href="css/mv.css">
     <link rel="stylesheet" href="css/card.css">
     <meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
@@ -43,8 +42,8 @@
   <body class="home blog">
     <header id="js-header" class="header js-header">
       <div class="header__inner js-header-inner">
-        <h1>          
-          <img src="pictures/waseda.jpg" alt="Waseda University" class="header__logo-image">
+        <h1 class="header__logo">          
+          <img src="pictures/utokyo-logo.png" alt="東京大学" class="header__logo-image">
         </h1> 
         <nav class="header__menu js-header-menu">
           <ul class="header__nav"></ul>
@@ -102,7 +101,7 @@
                 <h2 class="information-bar__heading">Jun Akita</h2>
                 <div class="information-bar__content">
                   <p>
-                    <a href='//www.waseda.jp'>Waseda University</a>, Faculty of Science and Engineering<br>Department of Mathematics, 4th year(2025/12/25)
+                    <a href='//www.u-tokyo.ac.jp/'>東京大学大学院</a> 情報理工学系研究科 コンピュータ科学専攻<br>相澤彰子研究室 M1
                   </p> 
                 </div>
               </div>
@@ -132,10 +131,9 @@
                   <h3 class="card__item-title">Jun Akita</h3>
                   <div class="card__item-message">
                     <p>
-                      I'm Jun Akita, a forth year undergraduate student at Waseda University, majoring in Mathematics with a minor in Computer Science. Currently part of Usuba Laboratory. Researching logic and foundation of mathematics, about what proof is. I hope to research foundation of AI in graduate school, particularly the differences between inference and deduction.<br>
+                      I'm Jun Akita, an M1 student in the Department of Computer Science, Graduate School of Information Science and Technology, The University of Tokyo. I am currently affiliated with Akiko Aizawa Laboratory. My research interests are logic, foundations of mathematics, and the foundations of AI, particularly the differences between inference and deduction.<br>
                       I enjoy delving into a wide range of topics, from science like mathematics, physics and biology, to humanities like philosophy and literature. I also love watching animation, playing musical instruments and playing sports.<br>  
-                      I want to enjoy all things around the world in two ways, through my body and through my brain.<br><br>
-                      I'm always eager to connect with like-minded individuals and welcoming discussions at any time. Please feel free to reach out from my socials!
+                      I want to enjoy all things around the world in two ways, through my body and through my brain.
                     </p>          
                   </div>  
                 </div>
@@ -156,24 +154,33 @@
                   </p>
                   <h3 class="card__item-title">Education</h3>
                   <div class="card__item-message">
-                    <p>
-                      Here is my educational background.
-
-                      <br><br>
-
+                    <p>Here is my educational background.</p>
+                    <ul class="education-list">
                       <li>
-                        2022/3 Graduated from Hiroshima Municipal Motomachi High School
+                        2019/4 広島市立基町高等学校普通科 進学
                       </li>
                       <li>
-                        2022/4 Entered Waseda University, Faculty of Fundamental Science and Engineering
+                        2022/3 広島市立基町高等学校普通科 卒業
                       </li>
                       <li>
-                        2026/3 Bachelor of Science in Mathematics (expected), Waseda University, Faculty of Fundamental Science and Engineering
+                        2022/4 早稲田大学基幹理工学部 進学
                       </li>
                       <li>
-                        2026/4 Master's Program in Computer Science (expected), Graduate School of Information Science and Technology, The University of Tokyo
+                        2023/4 早稲田大学基幹理工学部 数学科 進学
+                      </li>
+                      <li>
+                        2025/10 早稲田大学基幹理工学部数学科 薄葉季路研究室 配属
+                      </li>
+                      <li>
+                        2026/3 早稲田大学基幹理工学部数学科薄葉季路研究室 卒業
+                      </li>
+                      <li>
+                        2026/4 東京大学大学院情報理工学系研究科コンピュータ科学専攻 進学
+                      </li>
+                      <li>
+                        2026/4 東京大学大学院情報理工学系研究科コンピュータ科学専攻 相澤彰子研究室 配属
                       </li>  
-                    </p>      
+                    </ul>      
                   </div>
                 </div>
               </article>
@@ -193,32 +200,69 @@
                   </p>
                   <h3 class="card__item-title">Experience</h3>
                   <div class="card__item-message">
-                    <p>
-                      Here is my work experience.
-
-                      <br><br>
-                      <li>
-                        2022/12 ~ 2025/7 <a href='//stardy.co.jp'>Stardy Inc.</a> (Contract)
-                      </li>
-                      <li>
-                        2023/4 ~ 2024/4 Founded student organization Nagare
-                      </li>
-                      <li>
-                        2024/1 ~ Founded Acies LLC
-                      </li>
-                      <li>
-                        2024/10 ~ <a href='//outlier.ai'>Outlier</a> (Member)
-                      </li>
-                      <li>
-                        2025/1 ~ <a href='//www.alanse.co.jp'>ALANSE Inc.</a> (Contract)
-                      </li>
-                      <li>
-                        2025/3 ~ Founded kamomemon LLC
-                      </li>
-                      <li>
-                        2025/7 ~ ARCRA Inc. (Contract)
-                      </li>
-                    </p>          
+                    <p>Here is my work experience.</p>
+                    <div class="resume-list">
+                      <div class="resume-item">
+                        <p class="resume-item__date">2022/12 ~ 2025/9</p>
+                        <h4 class="resume-item__title"><a href="https://stardy.co.jp/" target="_blank" rel="noopener noreferrer">株式会社Stardy</a></h4>
+                        <p>数学講師、数学・物理教材作成、Google Workspace/GASを用いた従業員管理ツールの開発、学生対応チャットBotの作成</p>
+                        <p><span class="resume-item__label">IT:</span> 業務におけるソフトウェアの活かし方や簡単なプログラムを学んだ</p>
+                        <p class="resume-item__stack">Google Workspace/GAS/GCP/Python</p>
+                      </div>
+                      <div class="resume-item">
+                        <p class="resume-item__date">2023/1 ~ 2023/3</p>
+                        <h4 class="resume-item__title">個人開発</h4>
+                        <p>FX自動売買ツールの作成</p>
+                        <p><span class="resume-item__label">IT:</span> 海外証券会社の共通取引プラットフォームMT4/MT5専用の言語MQL4/MQL5を用いて、自動売買に役立つインジケータとエキスパートアドバイザを作成した</p>
+                        <p class="resume-item__stack">MQL4/MQL5</p>
+                      </div>
+                      <div class="resume-item">
+                        <p class="resume-item__date">2023/6 ~ 2024/9</p>
+                        <h4 class="resume-item__title">学生団体Nagare</h4>
+                        <p>友人と学生団体を設立。愛知県弥富市の金魚農家売り上げ回復のPR活動の一環でホームページを作成。</p>
+                        <p><span class="resume-item__label">IT:</span> WordPressを用いたホームページを作成</p>
+                        <p class="resume-item__stack">WordPress/HTML/CSS/JavaScript/PHP</p>
+                        <p>参考: <a href="https://theclubmoney.net" target="_blank" rel="noopener noreferrer">農家HP</a></p>
+                      </div>
+                      <div class="resume-item">
+                        <p class="resume-item__date">2023/12 ~</p>
+                        <h4 class="resume-item__title"><a href="https://outlier.ai" target="_blank" rel="noopener noreferrer">Outlier AI</a></h4>
+                        <p><span class="resume-item__label">IT:</span> 音声モデル、動画生成モデルのデータアノテーションを経験</p>
+                      </div>
+                      <div class="resume-item">
+                        <p class="resume-item__date">2025/5 ~</p>
+                        <h4 class="resume-item__title">ALANSE株式会社</h4>
+                        <p>British Pub Hub及びキリンシティの需要予測AIモデルを作成。設計から予測、顧客への説明まで一通りの業務を行った。</p>
+                        <p><span class="resume-item__label">IT:</span> LightGBMを用いて予測し、時間ブロックに分ける方法で決定係数0.85〜0.9を達成</p>
+                        <p class="resume-item__stack">Python/LightGBM/polars</p>
+                      </div>
+                      <div class="resume-item">
+                        <p class="resume-item__date">2025/6 ~ 2025/11</p>
+                        <h4 class="resume-item__title">合同会社kamomemon</h4>
+                        <p>友人と起業しプロンプト共有プラットフォームアプリを作成。アイディア出し、設計、開発、営業まで一通り行ったが、ChatGPT 5の無料化によりアプリの優位性がなくなり失敗。</p>
+                        <p><span class="resume-item__label">IT:</span> フロントエンド: Next.js、バックエンド: TypeScript、API: Go</p>
+                      </div>
+                      <div class="resume-item">
+                        <p class="resume-item__date">2025/9 ~</p>
+                        <h4 class="resume-item__title">株式会社ARCRA</h4>
+                        <p>真珠の傷を判定する画像処理AIソフトの開発</p>
+                        <p><span class="resume-item__label">IT:</span> YOLOv8のバウンディングボックスを用いたデータアノテーションを行った</p>
+                      </div>
+                      <div class="resume-item">
+                        <p class="resume-item__date">2026/2 ~</p>
+                        <h4 class="resume-item__title">nocall株式会社</h4>
+                        <p>営業電話の自動化アプリ内部の音声生成モデル改良に従事</p>
+                        <p><span class="resume-item__label">IT:</span> STT/LLM/TTSモデルのプロダクトへのチューニングを行った。またOSSモデルのセルフホスト/ファインチューニングも行った。モデルごとの性能を定量的に比較・把握できた。</p>
+                        <p class="resume-item__stack">Vercel/Claude Code/STTモデル/TTSモデル/LLMモデル</p>
+                      </div>
+                      <div class="resume-item">
+                        <p class="resume-item__date">2026/6 ~</p>
+                        <h4 class="resume-item__title">AI店員アプリ</h4>
+                        <p>小売店の商品情報・位置情報をお客様にマンツーマンで提供するAI店員アプリを作成、営業中</p>
+                        <p><span class="resume-item__label">IT:</span> エンジニア単独で設計・開発を実施中</p>
+                        <p class="resume-item__stack">VRM</p>
+                      </div>
+                    </div>          
                   </div>
                 </div>
               </article>
@@ -307,26 +351,6 @@
 
             </div>
           </section>
-
-          <section id="contact" class="contact-section">
-            <div class="contact-section__container">
-              <h2 class="contact-section__title">
-                <span class="contact-section__title-line"></span>
-                <span class="contact-section__title-text">Contact</span>
-              </h2>
-              <div class="contact-section__content">
-                <p>Please feel free to reach out from my socials!</p>
-                <div class="contact-section__links">
-                  <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" class="contact-section__link contact-section__link--instagram">
-                    <span class="contact-section__link-text">Instagram</span>
-                  </a>
-                  <a href="https://github.com/" target="_blank" rel="noopener noreferrer" class="contact-section__link contact-section__link--github">
-                    <span class="contact-section__link-text">GitHub</span>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </section>
         </div>
       </main>
     </div>
@@ -336,18 +360,6 @@
 
     <script type='text/javascript' src='https://www.vext.co.jp/wp-includes/js/dist/vendor/regenerator-runtime.min.js?ver=0.13.9' id='regenerator-runtime-js'></script>
     <script type='text/javascript' src='https://www.vext.co.jp/wp-includes/js/dist/vendor/wp-polyfill.min.js?ver=3.15.0' id='wp-polyfill-js'></script>
-    <script type='text/javascript' id='contact-form-7-js-extra'>
-      /* <![CDATA[ */
-      var wpcf7 = {"api":{"root":"https:\/\/www.vext.co.jp\/wp-json\/","namespace":"contact-form-7\/v1"}};
-      /* ]]> */
-    </script>
-    <script type='text/javascript' src='https://www.vext.co.jp/wp-content/plugins/contact-form-7/includes/js/index.js?ver=5.5.6' id='contact-form-7-js'></script>
-    <script type='text/javascript' id='wpcf7-recaptcha-js-extra'>
-      /* <![CDATA[ */
-      var wpcf7_recaptcha = {"sitekey":"6Led1tchAAAAADMJ1wneJW46jQigTXp1R0uhMZFX","actions":{"homepage":"homepage","contactform":"contactform"}};
-      /* ]]> */
-    </script>
-    <script type='text/javascript' src='https://www.vext.co.jp/wp-content/plugins/contact-form-7/modules/recaptcha/index.js?ver=5.5.6' id='wpcf7-recaptcha-js'></script>
     <script crossorigin="anonymous" src="https://polyfill.io/v3/polyfill.min.js?features=default%2CArray.prototype.find%2CIntersectionObserver"></script>
     <script src="https://www.vext.co.jp/wp-content/themes/vext-corp-2019/assets/js/lib.js?v=1.4.2"></script>
     <script src="https://www.vext.co.jp/wp-content/themes/vext-corp-2019/assets/js/app.js?v=1.4.2"></script>
