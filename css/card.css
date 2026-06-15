@@ -446,16 +446,6 @@
   line-height: 1.85
 }
 
-.resume-item__label {
-  font-weight: 700
-}
-
-.resume-item__stack {
-  color: #4b5563;
-  font-size: 12px;
-  font-weight: 700
-}
-
 @media screen and (max-width: 767px) {
   .card__item-message {
   margin: 8px 0 0;
@@ -466,8 +456,7 @@
   padding: 13px 0
   }
 
-  .resume-item__date,
-  .resume-item__stack {
+  .resume-item__date {
   font-size: 10px
   }
 
