@@ -142,7 +142,7 @@
 
 .header__logo-image {
   display: block;
-  width: 220px;
+  width: 56px;
   height: auto;
   max-height: 56px;
   object-fit: contain
@@ -150,7 +150,7 @@
 
 @media screen and (max-width: 767px) {
   .header__logo-image {
-  width: 170px;
+  width: 45px;
   max-height: 45px
   }
 
