@@ -48,6 +48,8 @@
  position: absolute;
  left: 0;
  top: 0;
+ width: 100%;
+ height: 100%;
  -webkit-transform-origin: left top;
  transform-origin: left top;
  -webkit-filter: drop-shadow(0 0 #000);
@@ -231,6 +233,11 @@
  opacity: 0
 }
 
+.mv__rect.is-active .mv__rect-block {
+ opacity: 1;
+ transition: opacity .4s ease
+}
+
 @media screen and (max-width: 767px) {
  .mv__rect-block {
  width: 7px;
@@ -265,8 +272,7 @@
  padding: 76px 0 0;
  background-color: #ccc;
  background-size: cover;
- background-position: bottom;
- background-image: url(/wp-content/themes/vext-corp-2019/assets/images/mv-detail-bg-default.png)
+ background-position: bottom
 }
 
 @media screen and (max-width: 767px) {
@@ -430,7 +436,7 @@
  line-height: 1;
  background-color: #0e192d;
  color: #fff;
- font-family: YakuHanJP, Montserrat, sans-serif;
+ font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", YuGothic, "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
  font-weight: 600;
  letter-spacing: .09em
 }
@@ -497,7 +503,7 @@
 .information-bar__link__inner {
  display: inline-block;
  font-size: 14px;
- font-family: YakuHanJP, Montserrat, sans-serif;
+ font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", YuGothic, "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
  font-weight: 600;
  line-height: 1;
  letter-spacing: .09em;
@@ -557,4 +563,3 @@
  }
 
 }
-

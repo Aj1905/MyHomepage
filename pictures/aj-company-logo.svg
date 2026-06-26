@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="96" viewBox="0 0 360 96" role="img" aria-labelledby="title desc">
+  <title id="title">AJ company logo</title>
+  <desc id="desc">AJ company wordmark for AI agent, web development, and SES services.</desc>
+  <defs>
+    <linearGradient id="markAccent" x1="18" y1="16" x2="78" y2="80" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#126050"/>
+      <stop offset="1" stop-color="#b5842f"/>
+    </linearGradient>
+  </defs>
+  <rect x="4" y="8" width="80" height="80" rx="14" fill="#111714"/>
+  <path d="M18 68L42 24H53L31 68H18Z" fill="url(#markAccent)"/>
+  <path d="M49 24H64V56C64 66.5 57.2 73 46.4 73C39.8 73 34.7 70.7 31.2 66.6L40.4 58.4C41.9 60.5 43.7 61.7 46.3 61.7C49.2 61.7 51.1 59.8 51.1 56V36.3H49V24Z" fill="#ffffff"/>
+  <path d="M96 20V76" stroke="#d8e0dc" stroke-width="1.5"/>
+  <text x="116" y="43" fill="#111714" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="32" font-weight="850" letter-spacing="0">AJ</text>
+  <text x="116" y="66" fill="#66736f" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="14" font-weight="700" letter-spacing="0">AI Agent / Web / SES</text>
+</svg>

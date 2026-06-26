@@ -296,6 +296,26 @@
   background-position: 50%
 }
 
+.card__item-bg-image--profile {
+  background-image: url("../pictures/kawazu.jpg")
+}
+
+.card__item-bg-image--education {
+  background-image: url("../pictures/waseda_view.jpg")
+}
+
+.card__item-bg-image--experience {
+  background-image: url("../pictures/achieving.jpg")
+}
+
+.card__item-bg-image--research {
+  background-image: url("../pictures/curiosity.jpg")
+}
+
+.card__item-bg-image--goal {
+  background-image: url("../pictures/universebrain.jpg")
+}
+
 .card__item-bg-mask {
   position: absolute;
   top: 0;
@@ -380,7 +400,7 @@
   display: block;
   margin: 1px 0 0;
   font-size: 56px;
-  font-family: YakuHanJP, Montserrat, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", YuGothic, "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
   font-weight: 700;
   line-height: 1.5;
   will-change: transform
