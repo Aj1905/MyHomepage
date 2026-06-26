@@ -2,6 +2,23 @@
 
 const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
+function applyMinimumViewport() {
+  const viewport = document.querySelector("meta[name='viewport']");
+  if (!viewport) return;
+
+  const defaultContent = "width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0";
+  const fixedContent = "width=375,initial-scale=1.0,maximum-scale=1.0,user-scalable=0";
+
+  function updateViewport() {
+    const viewportWidth = Math.min(window.screen.width || window.innerWidth, window.innerWidth);
+    viewport.setAttribute("content", viewportWidth < 375 ? fixedContent : defaultContent);
+  }
+
+  updateViewport();
+  window.addEventListener("resize", updateViewport, { passive: true });
+  window.addEventListener("orientationchange", updateViewport, { passive: true });
+}
+
 function showElement(element) {
   element.classList.add("is-show");
 }
@@ -142,6 +159,7 @@ function drawHeroCanvas() {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
+  applyMinimumViewport();
   splitHeadingText();
   activateIntro();
   observeScrollItems();
