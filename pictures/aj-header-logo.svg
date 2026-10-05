@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="123" height="29" viewBox="0 0 123 29" role="img" aria-labelledby="title desc">
+  <title id="title">AJ mark</title>
+  <desc id="desc">AJ company mark in a VEXT header logo frame.</desc>
+  <defs>
+    <linearGradient id="markAccent" x1="6" y1="5" x2="24" y2="24" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#126050"/>
+      <stop offset="1" stop-color="#b5842f"/>
+    </linearGradient>
+  </defs>
+  <rect x="0" y="0" width="29" height="29" rx="6" fill="#111714"/>
+  <path d="M6.4 22L14.5 7H18.1L10.8 22H6.4Z" fill="url(#markAccent)"/>
+  <path d="M17.3 7H22.3V17.9C22.3 21.45 19.95 23.7 16.35 23.7C14.15 23.7 12.45 22.9 11.25 21.45L14.35 18.7C14.85 19.4 15.5 19.85 16.35 19.85C17.35 19.85 18 19.2 18 17.9V11.15H17.3V7Z" fill="#fff"/>
+</svg>

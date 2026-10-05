@@ -50,6 +50,58 @@ function activateIntro() {
   });
 }
 
+function initHeaderMenu() {
+  const header = document.querySelector(".js-header");
+  const inner = document.querySelector(".js-header-inner");
+  const menu = document.querySelector(".js-header-menu");
+  const hamburger = document.getElementById("js-header-hamburger");
+  if (!header || !inner || !menu || !hamburger) return;
+
+  const mobileQuery = window.matchMedia("(max-width: 767px)");
+
+  function closeMenu() {
+    header.classList.remove("is-open");
+    hamburger.classList.remove("is-active");
+    inner.style.height = "";
+  }
+
+  function openMenu() {
+    header.classList.add("is-open");
+    hamburger.classList.add("is-active");
+    inner.style.height = `${menu.scrollHeight + 50}px`;
+  }
+
+  function updateForViewport() {
+    if (!mobileQuery.matches) {
+      closeMenu();
+      return;
+    }
+
+    if (header.classList.contains("is-open")) {
+      openMenu();
+    }
+  }
+
+  hamburger.addEventListener("click", () => {
+    if (!mobileQuery.matches) return;
+
+    if (header.classList.contains("is-open")) {
+      closeMenu();
+    } else {
+      openMenu();
+    }
+  });
+
+  menu.querySelectorAll("a").forEach((link) => {
+    link.addEventListener("click", () => {
+      if (mobileQuery.matches) closeMenu();
+    });
+  });
+
+  window.addEventListener("resize", updateForViewport, { passive: true });
+  window.addEventListener("orientationchange", updateForViewport, { passive: true });
+}
+
 function observeScrollItems() {
   const items = Array.from(document.querySelectorAll(".js-scroll-show"));
 
@@ -161,6 +213,7 @@ function drawHeroCanvas() {
 document.addEventListener("DOMContentLoaded", () => {
   applyMinimumViewport();
   splitHeadingText();
+  initHeaderMenu();
   activateIntro();
   observeScrollItems();
   drawHeroCanvas();
