@@ -1,3 +1,30 @@
+# .gitignore — 3 節構成 (再現可能 / 秘密情報 / 端末固有)。ここに書いたものは端末間で同期されない。
+# 大きいファイルは除外しない。data/ に置き、必要になった時点で `git lfs track "data/**"` で追跡する。
+
+# ---- 1. 再現可能: コマンドで作り直せるもの。再現手順は README に書く ----
+# Build files (if any)
+dist/
+build/
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+# Caches
+.npm
+.eslintcache
+# Temporary files
+*.tmp
+*.temp
+
+# ---- 2. 秘密情報: git に入れない。値は 1Password に置き、参照だけ .env.tpl に書く ----
+.env
+.env.*
+!.env.tpl
+!.env.example
+!.env.*.example
+
+# ---- 3. 端末固有: OS・エディタが作る付随ファイル ----
 # OS generated files
 .DS_Store
 .DS_Store?
@@ -6,7 +33,6 @@
 .Trashes
 ehthumbs.db
 Thumbs.db
-
 # Editor directories and files
 .vscode/
 .idea/
@@ -16,34 +42,3 @@ Thumbs.db
 .project
 .classpath
 .settings/
-
-# Logs
-*.log
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-
-# Optional npm cache directory
-.npm
-
-# Optional eslint cache
-.eslintcache
-
-# Temporary files
-*.tmp
-*.temp
-
-# Build files (if any)
-dist/
-build/
-
-
-
-
-
-
-
-
-
-
-
